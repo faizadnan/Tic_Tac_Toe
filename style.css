@@ -7,12 +7,13 @@
 .game_container {
     display: flex;
     justify-content: center;
+    
     /* align-items: center; */
 
 }
 
 .game_div {
-    width: 50%;
+    width: 500px;
     /* border: 1px solid red; */
     display: flex;
     justify-content: flex-end;
@@ -69,4 +70,17 @@
 
 #gif img{
     display: none;
+}
+
+@media screen and (max-width: 500px) {
+
+    .game_container{
+        flex-wrap: wrap;
+    }
+
+    .game_div{
+        order: 2;
+
+    }
+    
 }
