@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 .game_container {
     margin-top: 40px;
     display: flex;
@@ -100,4 +102,18 @@
     justify-content: center;
    }
     
+}
+form{
+   display: flex;
+   justify-content: center;}
+
+form button{
+    border: none;
+    background-color: blue;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+
 }
