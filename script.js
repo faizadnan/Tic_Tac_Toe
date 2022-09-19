@@ -2,6 +2,8 @@
 
 
 var turn = "X";
+const music = new Audio("./music1.wav")
+const winner = new Audio("./winner1.mp3")
 
 function changeTurn() {
     return turn === "X" ? "0" : "X";
@@ -25,7 +27,8 @@ function checkWin() {
             console.log("Wisn");
             document.getElementById("winner").innerText = `Congratulation! ${boxtext[e[0]].innerText} Wins`;
 
-            document.querySelector("#gif").getElementsByTagName("img")[0].style.display = "inline";
+            document.querySelector("#gif").getElementsByTagName("img")[0].style.display = "flex";
+            winner.play();
     }})
 
 }
@@ -38,6 +41,8 @@ Array.from(box).forEach((boxes) => {
             boxtext.innerText = turn;
             turn = changeTurn();
             checkWin();
+            music.currentTime=0;
+            music.play();
         }
 
 

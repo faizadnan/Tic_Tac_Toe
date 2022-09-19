@@ -5,9 +5,10 @@
 }
 
 .game_container {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    
+    gap: 30px;
     /* align-items: center; */
 
 }
@@ -82,5 +83,21 @@
         order: 2;
 
     }
+
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 25vw);
+        grid-template-rows: repeat(3, 25vw);
+    }
+
+    .information{
+        width: 90%;
+    }
+
+   #gif{
+    display: flex;
+    justify-content: center;
+   }
     
 }
